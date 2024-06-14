@@ -10,4 +10,4 @@ jobs:
             - name: checkout the repo
               uses: actions/checkout@v2
             - name: print greeting
-              run: echo "Welcome World!"
+              run: echo "Welcome World && echo $USER!"

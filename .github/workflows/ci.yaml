@@ -1,0 +1,13 @@
+name: CI
+on:
+    push:
+        branches:
+            - master
+jobs:
+    print-greeting:
+        runs-on: ubuntu:latest
+        steps:
+            - name: checkout the repo
+              uses: actions/checkout@v2
+            - name: print greeting
+              run: echo "Welcome World!"
